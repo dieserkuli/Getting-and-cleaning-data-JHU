@@ -1,11 +1,6 @@
----
-title: "CodeBook"
-author: "Lukas Steuer"
-date: "9 1 2026"
-output: html_document
----
+Author: Lukas Steuer
 
-## SOURCE
+# SOURCE
 Data are from the UCI HAR Dataset. Measurements from Smartphone sensors have
 been used from 30 users during several activities.
 
@@ -15,26 +10,26 @@ Training and test sets have been...
 - renamed and re-labeled based on the given codebook and understanding
 - reduced to the averages of each subject x activity combination
 
-## VARIABLES
-subject: Identifies person via a personal ID
+# VARIABLES
+### subject: Identifies person via a personal ID
 
-activity: Six different ones have been taken into account 
+### activity: Six different ones have been taken into account:
 (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
-- measurement variables consist of several parts:
-  1) **time** (directly recorded) 
+### measurement variables consist of several parts:
+  - **time** (directly recorded) 
      or **frequency** (obtained via Fast Fourier Transformation)
      
-  2) **Body** (voluntary movement of the subject)
+  - **Body** (voluntary movement of the subject)
      or **Gravity** (static effect on the sensor due to grav. acceleration)
      
-  3) **Accelerometer** (linear acceleration)
+  - **Accelerometer** (linear acceleration)
      or **Gyroscope** (Angular velocity)
      
-  4) **Jerk** (how abruptly the movement changed)
+  - **Jerk** (how abruptly the movement changed)
      or **Magnitude** (Overall strength)
      
-  5) **X, Y, Z** (Axes on the phone's coordinate system)
+  - **X, Y, Z** (Axes on the phone's coordinate system)
      **Mean** (Arrithmetic mean/average of the signal over a time period)
      or **Std** (Standard deviation, showing variation around the mean)
      
